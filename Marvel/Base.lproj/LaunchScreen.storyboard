@@ -1,25 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JWu-n6-Ku8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="Hp1-ko-5xB">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                <viewController id="JWu-n6-Ku8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="68h-wD-mNw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel-logo" translatesAutoresizingMaskIntoConstraints="NO" id="VoB-um-diE">
+                                <rect key="frame" x="67.5" y="253.5" width="240" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Qm3-01-dyX"/>
+                                    <constraint firstAttribute="width" constant="240" id="l4t-TX-3tm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Marvel Comic Con" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AP-rU-Pww">
+                                <rect key="frame" x="84.5" y="52" width="206" height="161.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="saurabhkumar.gajjar@epita.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctV-fL-gka">
+                                <rect key="frame" x="77" y="474" width="220" height="173"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="SaurabhKumar Gajjar" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFD-48-5Ry">
+                                <rect key="frame" x="106.5" y="443.5" width="162" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.18675235770000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EFD-48-5Ry" firstAttribute="centerX" secondItem="68h-wD-mNw" secondAttribute="centerX" id="0XS-mb-5BW"/>
+                            <constraint firstItem="3AP-rU-Pww" firstAttribute="centerX" secondItem="68h-wD-mNw" secondAttribute="centerX" id="2el-1Y-jwj"/>
+                            <constraint firstItem="EFD-48-5Ry" firstAttribute="top" secondItem="VoB-um-diE" secondAttribute="bottom" constant="30" id="IDn-3c-gMS"/>
+                            <constraint firstItem="VoB-um-diE" firstAttribute="centerX" secondItem="68h-wD-mNw" secondAttribute="centerX" id="LFM-Nj-xX9"/>
+                            <constraint firstItem="VoB-um-diE" firstAttribute="centerY" secondItem="68h-wD-mNw" secondAttribute="centerY" id="Us2-M5-dRY"/>
+                            <constraint firstItem="ctV-fL-gka" firstAttribute="centerX" secondItem="68h-wD-mNw" secondAttribute="centerX" constant="-0.5" id="Xsf-zb-Gkz"/>
+                            <constraint firstItem="3AP-rU-Pww" firstAttribute="top" secondItem="Egh-dr-mOw" secondAttribute="top" constant="32" id="eom-R0-Xvs"/>
+                            <constraint firstItem="ctV-fL-gka" firstAttribute="top" secondItem="EFD-48-5Ry" secondAttribute="bottom" constant="10" id="lbE-Q1-A95"/>
+                            <constraint firstItem="VoB-um-diE" firstAttribute="top" secondItem="3AP-rU-Pww" secondAttribute="bottom" constant="40" id="rdi-h8-6zL"/>
+                            <constraint firstItem="Egh-dr-mOw" firstAttribute="bottom" secondItem="ctV-fL-gka" secondAttribute="bottom" constant="20" id="w4v-eq-Chv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Egh-dr-mOw"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5M-Qd-YGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="51.724137931034484" y="373.60000000000002"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Marvel-logo" width="640" height="253"/>
+    </resources>
 </document>
